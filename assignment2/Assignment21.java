@@ -136,7 +136,7 @@ public class Assignment21 {
     /*
     * write your understanding here.
     * 
-    * In java, with how making references to objects work, the parameters of function are only references
+    * In java, parameters of a function passes only references of an object, the parameters of function are only references
     * to the objects themselves. So changing the objects that the parameters x and y are referring to 
     * would not change the objects a and b are referring.
     */
