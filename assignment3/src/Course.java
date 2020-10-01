@@ -6,7 +6,7 @@ public class Course {
     private String name;
     private int numberOfStudent;
     private Student[] students;
-    public static int MAX_STUDENTS = 10;
+    public static final int MAX_STUDENTS = 10;
 
     public Course(String name) {
         this.name = name;
