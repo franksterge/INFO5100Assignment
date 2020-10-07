@@ -54,7 +54,7 @@ public class Test {
     }
 
     public static String reverseString(String s) {
-        String[] parsedStrings = s.trim().split("\s+");
+        String[] parsedStrings = s.trim().split("\\s+");
         String result = "";
         for (int i = parsedStrings.length - 1; i >= 0; i--) {
             result += parsedStrings[i].trim() + " ";
