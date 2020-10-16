@@ -1,8 +1,9 @@
 package classes;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Checkout {
-    private ArrayList<DessertItem> checkoutItems;
+    private List<DessertItem> checkoutItems;
 
     public Checkout() {
         this.checkoutItems = new ArrayList<>();
@@ -45,7 +46,7 @@ public class Checkout {
     private String getCheckoutHeader() {
         String result = "";
         String dividingLine = "";
-        for (int i = 0; i < DessertShoppe.LEADING_SPACE_LENGTH; i++) {
+        for (int i = 0; i < DessertShoppe.MARGIN_SPACE_LENGTH; i++) {
             result += " ";
             dividingLine += " ";
         }

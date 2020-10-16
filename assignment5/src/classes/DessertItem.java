@@ -29,13 +29,14 @@ public abstract class DessertItem {
         String[] itemName = itemString.split("\\s+");
         int currentLineLength = 0;
         for (int i = 0; i < itemName.length; i++) {
-            if (currentLineLength + itemName[i].length() > DessertShoppe.LINE_LENGTH - price.length()) {
+            if (currentLineLength + itemName[i].length() >=
+                    DessertShoppe.LINE_LENGTH - price.length() - DessertShoppe.MARGIN_SPACE_LENGTH) {
                 result += "\n";
                 currentLineLength = 0;
-            } else {
-                result += itemName[i] + " ";
-                currentLineLength += itemName[i].length();
             }
+            result += itemName[i] + " ";
+            currentLineLength += itemName[i].length();
+
         }
         return result;
     }
